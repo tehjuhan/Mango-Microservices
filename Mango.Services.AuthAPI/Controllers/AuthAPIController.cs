@@ -43,7 +43,7 @@ namespace Mango.Services.AuthAPI.Controllers
                 return BadRequest(_response);
             }
 
-            _response.IsSuccess = true;
+            _response.Result = loginResponse;
             return Ok(_response);
         }
     }
