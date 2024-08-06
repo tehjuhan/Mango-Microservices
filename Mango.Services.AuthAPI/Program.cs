@@ -26,6 +26,9 @@ builder.Services.AddControllers();
 // Register AuthService
 builder.Services.AddScoped<IAuthService, AuthService>();
 
+// Register JwtTokenGenerator
+builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
